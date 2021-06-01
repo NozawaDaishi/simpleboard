@@ -8,16 +8,13 @@
     <body>
         @component('components.header')
         @endcomponent
-
         <div class="container pt-5 pb-5">
             @component('components.flash')
             @endcomponent
             @yield('content')
         </div>
-
         @component('components.footer')
         @endcomponent
-
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
